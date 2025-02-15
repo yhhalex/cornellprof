@@ -1,8 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
+import localFont from "next/font/local"
+
 
 export default function Layout({ children } : Readonly<{children : React.ReactNode}>) {
   return (
-    <main className="front-work-sans">
+    <main className="workSans.variable">
       <Navbar /> 
       {children}
     </main>
